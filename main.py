@@ -23,6 +23,7 @@ def main():
 
     try:
         driver.get("https://www.ozon.ru/api/entrypoint-api.bx/page/json/v2?url=%2Fproduct%2Fgornyy-velosiped-forward-sporting-sx-27-5-19-rost-1841072929")
+        driver.get("https://www.ozon.ru/api/entrypoint-api.bx/page/json/v2?url=%2Fproduct%2Fgornyy-velosiped-forward-sporting-sx-27-5-19-rost-1841072929")
 
         with open("output.html", "w", encoding="utf-8") as f:
             f.write(driver.page_source)
